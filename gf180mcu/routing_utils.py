@@ -12,7 +12,7 @@ from gdsfactory.typings import LayerSpec, Port
 # from doroutes import find_route_astar
 from gf180mcu.cells.via_generator import via_stack
 
-# Layer definitions for Sky130
+# Layer definitions for GF180MCU
 LAYER_M1 = (34, 0)  # Metal 1 - Horizontal
 LAYER_M2 = (36, 0)  # Metal 2 - Vertical
 
