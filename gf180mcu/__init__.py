@@ -11,6 +11,7 @@ from gf180mcu.layers import (
     get_layer_stack,
     layer,
 )
+from gf180mcu import routing_utils
 from gf180mcu.tech import cross_sections, routing_strategies
 
 __all__ = [
@@ -25,6 +26,7 @@ __all__ = [
     "layer",
     "layers",
     "logic",
+    "routing_utils",
 ]
 __version__ = "1.0.0"
 
