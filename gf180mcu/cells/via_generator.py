@@ -150,21 +150,21 @@ def via_stack(
         )
         via1 = c.add_ref(via1_gen)
 
-        if (via1.xmax - via1.xmin + 2 * m_enc[0]) < (
+        if (via1.xmax - via1.xmin + 2 * m_enc) < (
             via_size[0] + 2 * via_enc[0]
         ) and metal_level >= 3:
             m2_x = via_size[0] + 2 * via_enc[0]
 
         else:
-            m2_x = via1.xmax - via1.xmin + 2 * m_enc[0]
+            m2_x = via1.xmax - via1.xmin + 2 * m_enc
 
-        if (via1.ymax - via1.ymin + 2 * m_enc[1]) < (
+        if (via1.ymax - via1.ymin + 2 * m_enc) < (
             via_size[1] + 2 * via_enc[1]
         ) and metal_level >= 3:
             m2_y = via_size[1] + 2 * via_enc[1]
 
         else:
-            m2_y = via1.ymax - via1.ymin + 2 * m_enc[1]
+            m2_y = via1.ymax - via1.ymin + 2 * m_enc
 
         m2_mx = (m2_x - (via1.xmax - via1.xmin)) / 2
         m2_my = (m2_y - (via1.ymax - via1.ymin)) / 2
